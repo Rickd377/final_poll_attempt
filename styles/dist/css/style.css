@@ -86,6 +86,13 @@ input {
   border: 1px solid #eaeaea;
   border-radius: 0.3rem;
   font-family: "Poppins", sans-serif;
+  outline-width: 1px;
+}
+.login-register-body .login-register-form .input-wrapper input:invalid {
+  outline-color: #f33;
+}
+.login-register-body .login-register-form .input-wrapper input:valid {
+  outline-color: #4b4;
 }
 .login-register-body .login-register-form .input-wrapper i {
   display: flex;
@@ -108,6 +115,9 @@ input {
   border-radius: 0.3rem;
   cursor: pointer;
   font-family: "Poppins", sans-serif;
+}
+.login-register-body .login-register-form .submit-btn.valid {
+  background-color: #a5d5ff;
 }
 .login-register-body .login-register-form .form-text {
   width: 100%;

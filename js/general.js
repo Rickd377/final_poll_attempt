@@ -12,3 +12,16 @@ document.querySelectorAll('.fa-eye-slash').forEach(function(icon) {
     }
   });
 });
+
+document.querySelectorAll('.login-register-form input').forEach(function(input) {
+  input.addEventListener('input', function() {
+    const form = input.closest('.login-register-form');
+    const allValid = Array.from(form.querySelectorAll('input')).every(input => input.checkValidity());
+    const submitBtn = form.querySelector('.submit-btn');
+    if (allValid) {
+      submitBtn.classList.add('valid');
+    } else {
+      submitBtn.classList.remove('valid');
+    }
+  });
+});
