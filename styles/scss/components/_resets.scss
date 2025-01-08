@@ -21,6 +21,8 @@ footer, header, nav, section, main {
 body {
   line-height: 1;
   font-family: $ff_poppins;
+  min-height: 100dvh;
+  color: $c_text;
 }
 
 ol, ul {

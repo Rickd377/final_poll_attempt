@@ -1,0 +1,63 @@
+.poll-body {
+  @include flex;
+  background: $c_bg-category;
+
+  .poll-form {
+    @include flex(start, start, column);
+    gap: 20px;
+    width: 450px;
+    background: $c_white;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    box-shadow: 3px 5px 10px rgba($c_black, .15),
+                inset 0 0 0 2px $c_gray-light;
+
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+
+    .input-wrapper {
+      @include flex;
+      width: 100%;
+      background-color: $c_gray-light;
+      padding: .8em;
+      border-radius: .3rem;
+
+      input[type="radio"] {
+        appearance: auto;
+        height: 1rem;
+        aspect-ratio: 1;
+        margin: 0;
+        margin-right: .5rem;
+      }
+
+      .votes-poll {
+        margin-left: auto;
+        visibility: hidden;
+      }
+
+    }
+    .btn-container {
+      width: 100%;
+      @include flex;
+      gap: 10px;
+    }
+
+    .vote-btn {
+      width: 100%;
+      background: $c_blue-light;
+      padding: .8em;
+      border-radius: .3rem;
+      text-align: center;
+      color: $c_black;
+      text-decoration: none;
+    }
+
+    .next-btn {
+      @extend .vote-btn;
+      background-color: $c_blue;
+      display: none;
+    }
+  }
+}

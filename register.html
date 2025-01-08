@@ -17,11 +17,27 @@
   <link rel="icon" type="image/x-icon" href="./assets/favicon-white.ico" media="(prefers-color-scheme: dark)">
   <link rel="stylesheet" href="./styles/dist/css/style.css">
 
-  <title>Document</title>
+  <title>Polltopia | Register</title>
 </head>
-<body>
+<body class="login-register-body">
   
-  
+  <form class="login-register-form" method="post" action="user-login-register.php">
+    <h1 class="form-title">Register</h1>
+    <div class="input-wrapper">
+      <input type="email" name="email" id="email-register" placeholder="Email address..." required>
+      <i class="fa-light fa-envelope email-icon"></i>
+    </div>
+    <div class="input-wrapper">
+      <input type="password" class="password-input" name="password" id="password-register" placeholder="Password..." required>
+      <i class="fa-light fa-eye-slash"></i>
+    </div>
+    <div class="input-wrapper">
+      <input type="password" class="password-input" name="confirm-password" id="confirm-password-register" placeholder="Confirm password..." required>
+      <i class="fa-light fa-eye-slash"></i>
+    </div>
+    <button type="submit" class="submit-btn">Register</button>
+    <p class="form-text">Already have an account? <a href="login.html" class="form-link">Login</a></p>
+</form>
   
   <script src="./js/general.js"></script>
 </body>
